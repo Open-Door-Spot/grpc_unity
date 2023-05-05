@@ -35,6 +35,8 @@ using Node = UnityEngine.XR.XRNode;
 [ExecuteInEditMode]
 public class OVRCameraRig : MonoBehaviour
 {
+    public bool disableTracking = false;
+
     /// <summary>
     /// The left eye camera.
     /// </summary>

@@ -806,8 +806,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE8DBE527F24D9CFED839C34216
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mEEBA599288D944CA89F3C1522CEF69990E504468_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m0A2811694917F8032EBEB471978D5FE1289915C0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVRBody_OnPermissionGranted_m0EEEE70D50DB29499209D70AA2FF89C9F2135045_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m4929475EEB07641CBAC09FD5E17B3187FC858211_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_mA6CFCFDF515F1A74CF2DB450EE98B86E7D095DF0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m8D166460D48B4A75D56F6B43244F6E42637E8A65_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_m488F5C9976F2EC39EA527F68A1FDB65501671E03_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVRExtensions_ToSpaceStorageLocation_mFF7C8770305D5CFCCB62FB78319A81CEFFF6926C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVRExternalComposition_DisplayRefreshRateChanged_mC4070A362E609417C0C8EA9A296C51CBF3ABB358_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVREyeGaze_OnPermissionGranted_mB34D1014262301BEE82953BE312C6123727587CB_RuntimeMethod_var;
@@ -3143,62 +3143,64 @@ struct OVRBody_tFD1925544E46951623093A6B3F553E4F05BED1E6  : public MonoBehaviour
 // OVRCameraRig
 struct OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// System.Boolean OVRCameraRig::disableTracking
+	bool ___disableTracking_4;
 	// UnityEngine.Transform OVRCameraRig::<trackingSpace>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackingSpaceU3Ek__BackingField_4;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackingSpaceU3Ek__BackingField_5;
 	// UnityEngine.Transform OVRCameraRig::<leftEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftEyeAnchorU3Ek__BackingField_5;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftEyeAnchorU3Ek__BackingField_6;
 	// UnityEngine.Transform OVRCameraRig::<centerEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CcenterEyeAnchorU3Ek__BackingField_6;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CcenterEyeAnchorU3Ek__BackingField_7;
 	// UnityEngine.Transform OVRCameraRig::<rightEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightEyeAnchorU3Ek__BackingField_7;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightEyeAnchorU3Ek__BackingField_8;
 	// UnityEngine.Transform OVRCameraRig::<leftHandAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftHandAnchorU3Ek__BackingField_8;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftHandAnchorU3Ek__BackingField_9;
 	// UnityEngine.Transform OVRCameraRig::<rightHandAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightHandAnchorU3Ek__BackingField_9;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightHandAnchorU3Ek__BackingField_10;
 	// UnityEngine.Transform OVRCameraRig::<leftControllerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftControllerAnchorU3Ek__BackingField_10;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftControllerAnchorU3Ek__BackingField_11;
 	// UnityEngine.Transform OVRCameraRig::<rightControllerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightControllerAnchorU3Ek__BackingField_11;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightControllerAnchorU3Ek__BackingField_12;
 	// UnityEngine.Transform OVRCameraRig::<trackerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackerAnchorU3Ek__BackingField_12;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackerAnchorU3Ek__BackingField_13;
 	// System.Action`1<OVRCameraRig> OVRCameraRig::UpdatedAnchors
-	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* ___UpdatedAnchors_13;
+	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* ___UpdatedAnchors_14;
 	// System.Action`1<UnityEngine.Transform> OVRCameraRig::TrackingSpaceChanged
-	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* ___TrackingSpaceChanged_14;
+	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* ___TrackingSpaceChanged_15;
 	// System.Boolean OVRCameraRig::usePerEyeCameras
-	bool ___usePerEyeCameras_15;
+	bool ___usePerEyeCameras_16;
 	// System.Boolean OVRCameraRig::useFixedUpdateForTracking
-	bool ___useFixedUpdateForTracking_16;
+	bool ___useFixedUpdateForTracking_17;
 	// System.Boolean OVRCameraRig::disableEyeAnchorCameras
-	bool ___disableEyeAnchorCameras_17;
+	bool ___disableEyeAnchorCameras_18;
 	// System.Boolean OVRCameraRig::_skipUpdate
-	bool ____skipUpdate_18;
+	bool ____skipUpdate_19;
 	// System.String OVRCameraRig::trackingSpaceName
-	String_t* ___trackingSpaceName_19;
+	String_t* ___trackingSpaceName_20;
 	// System.String OVRCameraRig::trackerAnchorName
-	String_t* ___trackerAnchorName_20;
+	String_t* ___trackerAnchorName_21;
 	// System.String OVRCameraRig::leftEyeAnchorName
-	String_t* ___leftEyeAnchorName_21;
+	String_t* ___leftEyeAnchorName_22;
 	// System.String OVRCameraRig::centerEyeAnchorName
-	String_t* ___centerEyeAnchorName_22;
+	String_t* ___centerEyeAnchorName_23;
 	// System.String OVRCameraRig::rightEyeAnchorName
-	String_t* ___rightEyeAnchorName_23;
+	String_t* ___rightEyeAnchorName_24;
 	// System.String OVRCameraRig::leftHandAnchorName
-	String_t* ___leftHandAnchorName_24;
+	String_t* ___leftHandAnchorName_25;
 	// System.String OVRCameraRig::rightHandAnchorName
-	String_t* ___rightHandAnchorName_25;
+	String_t* ___rightHandAnchorName_26;
 	// System.String OVRCameraRig::leftControllerAnchorName
-	String_t* ___leftControllerAnchorName_26;
+	String_t* ___leftControllerAnchorName_27;
 	// System.String OVRCameraRig::rightControllerAnchorName
-	String_t* ___rightControllerAnchorName_27;
+	String_t* ___rightControllerAnchorName_28;
 	// UnityEngine.Camera OVRCameraRig::_centerEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____centerEyeCamera_28;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____centerEyeCamera_29;
 	// UnityEngine.Camera OVRCameraRig::_leftEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____leftEyeCamera_29;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____leftEyeCamera_30;
 	// UnityEngine.Camera OVRCameraRig::_rightEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____rightEyeCamera_30;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____rightEyeCamera_31;
 	// UnityEngine.Matrix4x4 OVRCameraRig::_previousTrackingSpaceTransform
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____previousTrackingSpaceTransform_31;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____previousTrackingSpaceTransform_32;
 };
 
 // OVRDebugHeadController
@@ -5453,8 +5455,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Resize_TisVector3f_t232AF83B4642C6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C_gshared (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<System.Object>::Invoke(T)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
-// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|75_0<System.Object>(UnityEngine.Transform)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisRuntimeObject_mE39D61DFA5BABCEC415856F58343B1A5E5B4AB2B_gshared (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method) ;
+// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|76_0<System.Object>(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisRuntimeObject_m99F9F87A43B9B825D7BC53F271FEBE7AD4AA2467_gshared (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>::get_Count()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m87B87D63BFF8E54EC550E3699DCFA6ED6513B1C4_gshared_inline (List_1_t8AE5A65CCFBC753343962D38B82C801F7BDE3C87* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>::get_Item(System.Int32)
@@ -6108,15 +6110,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162 (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___0_lhs, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_rhs, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Transform::get_parent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
-// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|75_0<OVRSpatialAnchor>(UnityEngine.Transform)
-inline void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_mA6CFCFDF515F1A74CF2DB450EE98B86E7D095DF0 (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method)
+// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|76_0<OVRSpatialAnchor>(UnityEngine.Transform)
+inline void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_m488F5C9976F2EC39EA527F68A1FDB65501671E03 (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method)
 {
-	((  void (*) (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisRuntimeObject_mE39D61DFA5BABCEC415856F58343B1A5E5B4AB2B_gshared)(__this, ___0_node, method);
+	((  void (*) (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisRuntimeObject_m99F9F87A43B9B825D7BC53F271FEBE7AD4AA2467_gshared)(__this, ___0_node, method);
 }
-// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|75_0<OVRSceneAnchor>(UnityEngine.Transform)
-inline void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m4929475EEB07641CBAC09FD5E17B3187FC858211 (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method)
+// System.Void OVRCameraRig::<CheckForAnchorsInParent>g__Check|76_0<OVRSceneAnchor>(UnityEngine.Transform)
+inline void OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m8D166460D48B4A75D56F6B43244F6E42637E8A65 (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_node, const RuntimeMethod* method)
 {
-	((  void (*) (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisRuntimeObject_mE39D61DFA5BABCEC415856F58343B1A5E5B4AB2B_gshared)(__this, ___0_node, method);
+	((  void (*) (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisRuntimeObject_m99F9F87A43B9B825D7BC53F271FEBE7AD4AA2467_gshared)(__this, ___0_node, method);
 }
 // OVRPose OVRExtensions::ToHeadSpacePose(UnityEngine.Transform,UnityEngine.Camera)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRPose_t8054769FD4517C10D2ECD2C14C823723D675EEFB OVRExtensions_ToHeadSpacePose_m76E544EB993FA33F3045ECD44176D6E5859EC866 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___1_camera, const RuntimeMethod* method) ;
@@ -11575,20 +11577,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E
 {
 	{
 		// public Camera leftEyeCamera { get { return (usePerEyeCameras) ? _leftEyeCamera : _centerEyeCamera; } }
-		bool L_0 = __this->___usePerEyeCameras_15;
+		bool L_0 = __this->___usePerEyeCameras_16;
 		if (L_0)
 		{
 			goto IL_000f;
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = __this->____centerEyeCamera_29;
 		return L_1;
 	}
 
 IL_000f:
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->____leftEyeCamera_30;
 		return L_2;
 	}
 }
@@ -11597,20 +11599,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E
 {
 	{
 		// public Camera rightEyeCamera { get { return (usePerEyeCameras) ? _rightEyeCamera : _centerEyeCamera; } }
-		bool L_0 = __this->___usePerEyeCameras_15;
+		bool L_0 = __this->___usePerEyeCameras_16;
 		if (L_0)
 		{
 			goto IL_000f;
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = __this->____centerEyeCamera_29;
 		return L_1;
 	}
 
 IL_000f:
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->____rightEyeCamera_31;
 		return L_2;
 	}
 }
@@ -11619,7 +11621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform trackingSpace { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_5;
 		return L_0;
 	}
 }
@@ -11629,8 +11631,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_trackingSpace_m6183210B
 	{
 		// public Transform trackingSpace { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CtrackingSpaceU3Ek__BackingField_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingSpaceU3Ek__BackingField_4), (void*)L_0);
+		__this->___U3CtrackingSpaceU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingSpaceU3Ek__BackingField_5), (void*)L_0);
 		return;
 	}
 }
@@ -11639,7 +11641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform leftEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftEyeAnchorU3Ek__BackingField_5;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftEyeAnchorU3Ek__BackingField_6;
 		return L_0;
 	}
 }
@@ -11649,8 +11651,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftEyeAnchor_m31D85D6B
 	{
 		// public Transform leftEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftEyeAnchorU3Ek__BackingField_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAnchorU3Ek__BackingField_5), (void*)L_0);
+		__this->___U3CleftEyeAnchorU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAnchorU3Ek__BackingField_6), (void*)L_0);
 		return;
 	}
 }
@@ -11659,7 +11661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform centerEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CcenterEyeAnchorU3Ek__BackingField_6;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CcenterEyeAnchorU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -11669,8 +11671,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_centerEyeAnchor_mC5CC58
 	{
 		// public Transform centerEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CcenterEyeAnchorU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAnchorU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CcenterEyeAnchorU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAnchorU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }
@@ -11679,7 +11681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform rightEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightEyeAnchorU3Ek__BackingField_7;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightEyeAnchorU3Ek__BackingField_8;
 		return L_0;
 	}
 }
@@ -11689,8 +11691,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightEyeAnchor_m5829AA9
 	{
 		// public Transform rightEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightEyeAnchorU3Ek__BackingField_7 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAnchorU3Ek__BackingField_7), (void*)L_0);
+		__this->___U3CrightEyeAnchorU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAnchorU3Ek__BackingField_8), (void*)L_0);
 		return;
 	}
 }
@@ -11699,7 +11701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform leftHandAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftHandAnchorU3Ek__BackingField_8;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftHandAnchorU3Ek__BackingField_9;
 		return L_0;
 	}
 }
@@ -11709,8 +11711,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftHandAnchor_mA43F383
 	{
 		// public Transform leftHandAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftHandAnchorU3Ek__BackingField_8 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftHandAnchorU3Ek__BackingField_8), (void*)L_0);
+		__this->___U3CleftHandAnchorU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftHandAnchorU3Ek__BackingField_9), (void*)L_0);
 		return;
 	}
 }
@@ -11719,7 +11721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform rightHandAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightHandAnchorU3Ek__BackingField_9;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightHandAnchorU3Ek__BackingField_10;
 		return L_0;
 	}
 }
@@ -11729,8 +11731,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightHandAnchor_m204471
 	{
 		// public Transform rightHandAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightHandAnchorU3Ek__BackingField_9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightHandAnchorU3Ek__BackingField_9), (void*)L_0);
+		__this->___U3CrightHandAnchorU3Ek__BackingField_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightHandAnchorU3Ek__BackingField_10), (void*)L_0);
 		return;
 	}
 }
@@ -11739,7 +11741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform leftControllerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftControllerAnchorU3Ek__BackingField_10;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftControllerAnchorU3Ek__BackingField_11;
 		return L_0;
 	}
 }
@@ -11749,8 +11751,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftControllerAnchor_m5
 	{
 		// public Transform leftControllerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftControllerAnchorU3Ek__BackingField_10 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftControllerAnchorU3Ek__BackingField_10), (void*)L_0);
+		__this->___U3CleftControllerAnchorU3Ek__BackingField_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftControllerAnchorU3Ek__BackingField_11), (void*)L_0);
 		return;
 	}
 }
@@ -11759,7 +11761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform rightControllerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightControllerAnchorU3Ek__BackingField_11;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightControllerAnchorU3Ek__BackingField_12;
 		return L_0;
 	}
 }
@@ -11769,8 +11771,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightControllerAnchor_m
 	{
 		// public Transform rightControllerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightControllerAnchorU3Ek__BackingField_11 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightControllerAnchorU3Ek__BackingField_11), (void*)L_0);
+		__this->___U3CrightControllerAnchorU3Ek__BackingField_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightControllerAnchorU3Ek__BackingField_12), (void*)L_0);
 		return;
 	}
 }
@@ -11779,7 +11781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 {
 	{
 		// public Transform trackerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackerAnchorU3Ek__BackingField_12;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackerAnchorU3Ek__BackingField_13;
 		return L_0;
 	}
 }
@@ -11789,8 +11791,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_set_trackerAnchor_m722C0541
 	{
 		// public Transform trackerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CtrackerAnchorU3Ek__BackingField_12 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackerAnchorU3Ek__BackingField_12), (void*)L_0);
+		__this->___U3CtrackerAnchorU3Ek__BackingField_13 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackerAnchorU3Ek__BackingField_13), (void*)L_0);
 		return;
 	}
 }
@@ -11807,7 +11809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_add_UpdatedAnchors_m7F37F5E
 	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* V_1 = NULL;
 	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* V_2 = NULL;
 	{
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_13;
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_14;
 		V_0 = L_0;
 	}
 
@@ -11820,7 +11822,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
 		V_2 = ((Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F*)Castclass((RuntimeObject*)L_4, Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F_il2cpp_TypeInfo_var));
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F** L_5 = (&__this->___UpdatedAnchors_13);
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F** L_5 = (&__this->___UpdatedAnchors_14);
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_6 = V_2;
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_7 = V_1;
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_8;
@@ -11850,7 +11852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_remove_UpdatedAnchors_m362C
 	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* V_1 = NULL;
 	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* V_2 = NULL;
 	{
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_13;
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_14;
 		V_0 = L_0;
 	}
 
@@ -11863,7 +11865,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
 		V_2 = ((Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F*)Castclass((RuntimeObject*)L_4, Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F_il2cpp_TypeInfo_var));
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F** L_5 = (&__this->___UpdatedAnchors_13);
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F** L_5 = (&__this->___UpdatedAnchors_14);
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_6 = V_2;
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_7 = V_1;
 		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_8;
@@ -11893,7 +11895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_add_TrackingSpaceChanged_mA
 	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* V_1 = NULL;
 	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* V_2 = NULL;
 	{
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_0 = __this->___TrackingSpaceChanged_14;
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_0 = __this->___TrackingSpaceChanged_15;
 		V_0 = L_0;
 	}
 
@@ -11906,7 +11908,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
 		V_2 = ((Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D*)Castclass((RuntimeObject*)L_4, Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D_il2cpp_TypeInfo_var));
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D** L_5 = (&__this->___TrackingSpaceChanged_14);
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D** L_5 = (&__this->___TrackingSpaceChanged_15);
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_6 = V_2;
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_7 = V_1;
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_8;
@@ -11936,7 +11938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_remove_TrackingSpaceChanged
 	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* V_1 = NULL;
 	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* V_2 = NULL;
 	{
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_0 = __this->___TrackingSpaceChanged_14;
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_0 = __this->___TrackingSpaceChanged_15;
 		V_0 = L_0;
 	}
 
@@ -11949,7 +11951,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
 		V_2 = ((Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D*)Castclass((RuntimeObject*)L_4, Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D_il2cpp_TypeInfo_var));
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D** L_5 = (&__this->___TrackingSpaceChanged_14);
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D** L_5 = (&__this->___TrackingSpaceChanged_15);
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_6 = V_2;
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_7 = V_1;
 		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_8;
@@ -11971,7 +11973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_Awake_mACD23E0C8E9F8DCE1199
 {
 	{
 		// _skipUpdate = true;
-		__this->____skipUpdate_18 = (bool)1;
+		__this->____skipUpdate_19 = (bool)1;
 		// EnsureGameObjectIntegrity();
 		VirtualActionInvoker0::Invoke(13 /* System.Void OVRCameraRig::EnsureGameObjectIntegrity() */, __this);
 		// }
@@ -12004,7 +12006,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_FixedUpdate_m2BDA282CAF3E2C
 {
 	{
 		// if (useFixedUpdateForTracking)
-		bool L_0 = __this->___useFixedUpdateForTracking_16;
+		bool L_0 = __this->___useFixedUpdateForTracking_17;
 		if (!L_0)
 		{
 			goto IL_0010;
@@ -12026,9 +12028,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_Update_m9D48D4C84C3E700E645
 {
 	{
 		// _skipUpdate = false;
-		__this->____skipUpdate_18 = (bool)0;
+		__this->____skipUpdate_19 = (bool)0;
 		// if (!useFixedUpdateForTracking)
-		bool L_0 = __this->___useFixedUpdateForTracking_16;
+		bool L_0 = __this->___useFixedUpdateForTracking_17;
 		if (L_0)
 		{
 			goto IL_0017;
@@ -12140,7 +12142,7 @@ IL_0008:
 IL_0016:
 	{
 		// if (_skipUpdate)
-		bool L_2 = __this->____skipUpdate_18;
+		bool L_2 = __this->____skipUpdate_19;
 		if (!L_2)
 		{
 			goto IL_0052;
@@ -12861,14 +12863,14 @@ IL_000f:
 		V_0 = L_3;
 		// var shouldRaiseEvent = TrackingSpaceChanged != null &&
 		//                            !_previousTrackingSpaceTransform.Equals(currentLocalToWorld);
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_4 = __this->___TrackingSpaceChanged_14;
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_4 = __this->___TrackingSpaceChanged_15;
 		if (!L_4)
 		{
 			goto IL_0034;
 		}
 	}
 	{
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_5 = (&__this->____previousTrackingSpaceTransform_31);
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_5 = (&__this->____previousTrackingSpaceTransform_32);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_6 = V_0;
 		bool L_7;
 		L_7 = Matrix4x4_Equals_mDB0C4CCC58BE3E108F1A40BE8DBDCD62E284CC51_inline(L_5, L_6, NULL);
@@ -12885,7 +12887,7 @@ IL_0035:
 	{
 		// _previousTrackingSpaceTransform = currentLocalToWorld;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_8 = V_0;
-		__this->____previousTrackingSpaceTransform_31 = L_8;
+		__this->____previousTrackingSpaceTransform_32 = L_8;
 		// if (shouldRaiseEvent)
 		if (!G_B5_0)
 		{
@@ -12894,7 +12896,7 @@ IL_0035:
 	}
 	{
 		// TrackingSpaceChanged(trackingSpace);
-		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_9 = __this->___TrackingSpaceChanged_14;
+		Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* L_9 = __this->___TrackingSpaceChanged_15;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
 		L_10 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
 		NullCheck(L_9);
@@ -12912,7 +12914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_RaiseUpdatedAnchorsEvent_mB
 {
 	{
 		// if (UpdatedAnchors != null)
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_13;
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_0 = __this->___UpdatedAnchors_14;
 		if (!L_0)
 		{
 			goto IL_0014;
@@ -12920,7 +12922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_RaiseUpdatedAnchorsEvent_mB
 	}
 	{
 		// UpdatedAnchors(this);
-		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_1 = __this->___UpdatedAnchors_13;
+		Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* L_1 = __this->___UpdatedAnchors_14;
 		NullCheck(L_1);
 		Action_1_Invoke_m5EAF6DC3A25754E6E1567695F0900BADEE69E09B_inline(L_1, __this, NULL);
 	}
@@ -13004,7 +13006,7 @@ IL_001a:
 	}
 	{
 		// trackingSpace = ConfigureAnchor(null, trackingSpaceName);
-		String_t* L_6 = __this->___trackingSpaceName_19;
+		String_t* L_6 = __this->___trackingSpaceName_20;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
 		L_7 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL, L_6);
 		OVRCameraRig_set_trackingSpace_m6183210BA7032CDC4DBD89DEFAA704118205A22D_inline(__this, L_7, NULL);
@@ -13014,7 +13016,7 @@ IL_001a:
 		NullCheck(L_8);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_9;
 		L_9 = Transform_get_localToWorldMatrix_m5D35188766856338DD21DE756F42277C21719E6D(L_8, NULL);
-		__this->____previousTrackingSpaceTransform_31 = L_9;
+		__this->____previousTrackingSpaceTransform_32 = L_9;
 	}
 
 IL_004d:
@@ -13034,7 +13036,7 @@ IL_004d:
 		// leftEyeAnchor = ConfigureAnchor(trackingSpace, leftEyeAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
 		L_12 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_13 = __this->___leftEyeAnchorName_21;
+		String_t* L_13 = __this->___leftEyeAnchorName_22;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
 		L_14 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_12, L_13);
 		OVRCameraRig_set_leftEyeAnchor_m31D85D6B9BD1FD5BF879546A05787C373D8ADF66_inline(__this, L_14, NULL);
@@ -13057,7 +13059,7 @@ IL_0073:
 		// centerEyeAnchor = ConfigureAnchor(trackingSpace, centerEyeAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
 		L_17 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_18 = __this->___centerEyeAnchorName_22;
+		String_t* L_18 = __this->___centerEyeAnchorName_23;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_17, L_18);
 		OVRCameraRig_set_centerEyeAnchor_mC5CC58E8F8C8BCECB25F68D90BF0D86BCA03C069_inline(__this, L_19, NULL);
@@ -13080,7 +13082,7 @@ IL_0099:
 		// rightEyeAnchor = ConfigureAnchor(trackingSpace, rightEyeAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
 		L_22 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_23 = __this->___rightEyeAnchorName_23;
+		String_t* L_23 = __this->___rightEyeAnchorName_24;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24;
 		L_24 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_22, L_23);
 		OVRCameraRig_set_rightEyeAnchor_m5829AA96DD4CFD4ED1822B6ACB0F2717512131D7_inline(__this, L_24, NULL);
@@ -13103,7 +13105,7 @@ IL_00bf:
 		// leftHandAnchor = ConfigureAnchor(trackingSpace, leftHandAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
 		L_27 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_28 = __this->___leftHandAnchorName_24;
+		String_t* L_28 = __this->___leftHandAnchorName_25;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
 		L_29 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_27, L_28);
 		OVRCameraRig_set_leftHandAnchor_mA43F38318E2193555C22C610529F080BEF67591D_inline(__this, L_29, NULL);
@@ -13126,7 +13128,7 @@ IL_00e5:
 		// rightHandAnchor = ConfigureAnchor(trackingSpace, rightHandAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32;
 		L_32 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_33 = __this->___rightHandAnchorName_25;
+		String_t* L_33 = __this->___rightHandAnchorName_26;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
 		L_34 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_32, L_33);
 		OVRCameraRig_set_rightHandAnchor_m20447196D4BAF71F7E6D45604BD884D4DBF0270E_inline(__this, L_34, NULL);
@@ -13149,7 +13151,7 @@ IL_010b:
 		// trackerAnchor = ConfigureAnchor(trackingSpace, trackerAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_37;
 		L_37 = OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline(__this, NULL);
-		String_t* L_38 = __this->___trackerAnchorName_20;
+		String_t* L_38 = __this->___trackerAnchorName_21;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39;
 		L_39 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_37, L_38);
 		OVRCameraRig_set_trackerAnchor_m722C0541F1B2010A3E642D38A3689E9EA86D69B7_inline(__this, L_39, NULL);
@@ -13172,7 +13174,7 @@ IL_0131:
 		// leftControllerAnchor = ConfigureAnchor(leftHandAnchor, leftControllerAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42;
 		L_42 = OVRCameraRig_get_leftHandAnchor_m2EE938DB2ADD234FA1211B562C659884ABC56644_inline(__this, NULL);
-		String_t* L_43 = __this->___leftControllerAnchorName_26;
+		String_t* L_43 = __this->___leftControllerAnchorName_27;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44;
 		L_44 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_42, L_43);
 		OVRCameraRig_set_leftControllerAnchor_m52BC7D80A2807A4877304F1AC69B5ACDF303CD57_inline(__this, L_44, NULL);
@@ -13195,7 +13197,7 @@ IL_0157:
 		// rightControllerAnchor = ConfigureAnchor(rightHandAnchor, rightControllerAnchorName);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_47;
 		L_47 = OVRCameraRig_get_rightHandAnchor_mF2D328A04338A8119F3BE6EE09FE66965258A26D_inline(__this, NULL);
-		String_t* L_48 = __this->___rightControllerAnchorName_27;
+		String_t* L_48 = __this->___rightControllerAnchorName_28;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49;
 		L_49 = VirtualFuncInvoker2< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, String_t* >::Invoke(14 /* UnityEngine.Transform OVRCameraRig::ConfigureAnchor(UnityEngine.Transform,System.String) */, __this, L_47, L_48);
 		OVRCameraRig_set_rightControllerAnchor_mD8034490959F032452D3EEBC91A57653D071FD73_inline(__this, L_49, NULL);
@@ -13204,7 +13206,7 @@ IL_0157:
 IL_017d:
 	{
 		// if (_centerEyeCamera == null || _leftEyeCamera == null || _rightEyeCamera == null)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_50 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_50 = __this->____centerEyeCamera_29;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_51;
 		L_51 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_50, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13214,7 +13216,7 @@ IL_017d:
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_52 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_52 = __this->____leftEyeCamera_30;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_53;
 		L_53 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_52, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13224,7 +13226,7 @@ IL_017d:
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_54 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_54 = __this->____rightEyeCamera_31;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_55;
 		L_55 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_54, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13242,26 +13244,26 @@ IL_01aa:
 		NullCheck(L_56);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_57;
 		L_57 = Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4(L_56, Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4_RuntimeMethod_var);
-		__this->____centerEyeCamera_28 = L_57;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____centerEyeCamera_28), (void*)L_57);
+		__this->____centerEyeCamera_29 = L_57;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____centerEyeCamera_29), (void*)L_57);
 		// _leftEyeCamera = leftEyeAnchor.GetComponent<Camera>();
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_58;
 		L_58 = OVRCameraRig_get_leftEyeAnchor_m659E320D48FB4FD7A5A6504D252C7C625280EB7C_inline(__this, NULL);
 		NullCheck(L_58);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_59;
 		L_59 = Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4(L_58, Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4_RuntimeMethod_var);
-		__this->____leftEyeCamera_29 = L_59;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftEyeCamera_29), (void*)L_59);
+		__this->____leftEyeCamera_30 = L_59;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftEyeCamera_30), (void*)L_59);
 		// _rightEyeCamera = rightEyeAnchor.GetComponent<Camera>();
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60;
 		L_60 = OVRCameraRig_get_rightEyeAnchor_m5AD100BC9FA1732C9AF150CEC1A0F34F2305840E_inline(__this, NULL);
 		NullCheck(L_60);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_61;
 		L_61 = Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4(L_60, Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4_RuntimeMethod_var);
-		__this->____rightEyeCamera_30 = L_61;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightEyeCamera_30), (void*)L_61);
+		__this->____rightEyeCamera_31 = L_61;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightEyeCamera_31), (void*)L_61);
 		// if (_centerEyeCamera == null)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_62 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_62 = __this->____centerEyeCamera_29;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_63;
 		L_63 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_62, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13280,10 +13282,10 @@ IL_01aa:
 		NullCheck(L_65);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_66;
 		L_66 = GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142(L_65, GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142_RuntimeMethod_var);
-		__this->____centerEyeCamera_28 = L_66;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____centerEyeCamera_28), (void*)L_66);
+		__this->____centerEyeCamera_29 = L_66;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____centerEyeCamera_29), (void*)L_66);
 		// _centerEyeCamera.tag = "MainCamera";
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_67 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_67 = __this->____centerEyeCamera_29;
 		NullCheck(L_67);
 		Component_set_tag_mAF8B6EC052F8AA67088F1841B57EA37F13D0451E(L_67, _stringLiteralE302AA9BECF9F1CB69CF2A3E5B33E0716BEA97F6, NULL);
 	}
@@ -13291,7 +13293,7 @@ IL_01aa:
 IL_0211:
 	{
 		// if (_leftEyeCamera == null)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_68 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_68 = __this->____leftEyeCamera_30;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_69;
 		L_69 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_68, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13310,10 +13312,10 @@ IL_0211:
 		NullCheck(L_71);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_72;
 		L_72 = GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142(L_71, GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142_RuntimeMethod_var);
-		__this->____leftEyeCamera_29 = L_72;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftEyeCamera_29), (void*)L_72);
+		__this->____leftEyeCamera_30 = L_72;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftEyeCamera_30), (void*)L_72);
 		// _leftEyeCamera.tag = "MainCamera";
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_73 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_73 = __this->____leftEyeCamera_30;
 		NullCheck(L_73);
 		Component_set_tag_mAF8B6EC052F8AA67088F1841B57EA37F13D0451E(L_73, _stringLiteralE302AA9BECF9F1CB69CF2A3E5B33E0716BEA97F6, NULL);
 	}
@@ -13321,7 +13323,7 @@ IL_0211:
 IL_0245:
 	{
 		// if (_rightEyeCamera == null)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_74 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_74 = __this->____rightEyeCamera_31;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_75;
 		L_75 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_74, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -13340,10 +13342,10 @@ IL_0245:
 		NullCheck(L_77);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_78;
 		L_78 = GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142(L_77, GameObject_AddComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m0933BC50E883CDEF6FA83FE190DA37CCB2802142_RuntimeMethod_var);
-		__this->____rightEyeCamera_30 = L_78;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightEyeCamera_30), (void*)L_78);
+		__this->____rightEyeCamera_31 = L_78;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightEyeCamera_31), (void*)L_78);
 		// _rightEyeCamera.tag = "MainCamera";
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_79 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_79 = __this->____rightEyeCamera_31;
 		NullCheck(L_79);
 		Component_set_tag_mAF8B6EC052F8AA67088F1841B57EA37F13D0451E(L_79, _stringLiteralE302AA9BECF9F1CB69CF2A3E5B33E0716BEA97F6, NULL);
 	}
@@ -13351,15 +13353,15 @@ IL_0245:
 IL_0279:
 	{
 		// _centerEyeCamera.stereoTargetEye = StereoTargetEyeMask.Both;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_80 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_80 = __this->____centerEyeCamera_29;
 		NullCheck(L_80);
 		Camera_set_stereoTargetEye_mDB97D9BA5BF538F709EBD006B6B59E78603510DD(L_80, 3, NULL);
 		// _leftEyeCamera.stereoTargetEye = StereoTargetEyeMask.Left;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_81 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_81 = __this->____leftEyeCamera_30;
 		NullCheck(L_81);
 		Camera_set_stereoTargetEye_mDB97D9BA5BF538F709EBD006B6B59E78603510DD(L_81, 1, NULL);
 		// _rightEyeCamera.stereoTargetEye = StereoTargetEyeMask.Right;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_82 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_82 = __this->____rightEyeCamera_31;
 		NullCheck(L_82);
 		Camera_set_stereoTargetEye_mDB97D9BA5BF538F709EBD006B6B59E78603510DD(L_82, 2, NULL);
 	}
@@ -13384,7 +13386,7 @@ IL_029d:
 	}
 	{
 		// if (_centerEyeCamera.stereoTargetEye != StereoTargetEyeMask.Left)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_85 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_85 = __this->____centerEyeCamera_29;
 		NullCheck(L_85);
 		int32_t L_86;
 		L_86 = Camera_get_stereoTargetEye_m4EAC83490BE3B389A5393D72AA5D0830F0476538(L_85, NULL);
@@ -13395,7 +13397,7 @@ IL_029d:
 	}
 	{
 		// _centerEyeCamera.stereoTargetEye = StereoTargetEyeMask.Left;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_87 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_87 = __this->____centerEyeCamera_29;
 		NullCheck(L_87);
 		Camera_set_stereoTargetEye_mDB97D9BA5BF538F709EBD006B6B59E78603510DD(L_87, 1, NULL);
 		goto IL_02dd;
@@ -13404,7 +13406,7 @@ IL_029d:
 IL_02c3:
 	{
 		// if (_centerEyeCamera.stereoTargetEye != StereoTargetEyeMask.Both)
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_88 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_88 = __this->____centerEyeCamera_29;
 		NullCheck(L_88);
 		int32_t L_89;
 		L_89 = Camera_get_stereoTargetEye_m4EAC83490BE3B389A5393D72AA5D0830F0476538(L_88, NULL);
@@ -13415,7 +13417,7 @@ IL_02c3:
 	}
 	{
 		// _centerEyeCamera.stereoTargetEye = StereoTargetEyeMask.Both;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_90 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_90 = __this->____centerEyeCamera_29;
 		NullCheck(L_90);
 		Camera_set_stereoTargetEye_mDB97D9BA5BF538F709EBD006B6B59E78603510DD(L_90, 3, NULL);
 	}
@@ -13423,7 +13425,7 @@ IL_02c3:
 IL_02dd:
 	{
 		// if (disableEyeAnchorCameras)
-		bool L_91 = __this->___disableEyeAnchorCameras_17;
+		bool L_91 = __this->___disableEyeAnchorCameras_18;
 		if (!L_91)
 		{
 			goto IL_030a;
@@ -13431,15 +13433,15 @@ IL_02dd:
 	}
 	{
 		// _centerEyeCamera.enabled = false;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_92 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_92 = __this->____centerEyeCamera_29;
 		NullCheck(L_92);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_92, (bool)0, NULL);
 		// _leftEyeCamera.enabled = false;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_93 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_93 = __this->____leftEyeCamera_30;
 		NullCheck(L_93);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_93, (bool)0, NULL);
 		// _rightEyeCamera.enabled = false;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_94 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_94 = __this->____rightEyeCamera_31;
 		NullCheck(L_94);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_94, (bool)0, NULL);
 		return;
@@ -13450,33 +13452,33 @@ IL_030a:
 		// if (_centerEyeCamera.enabled == usePerEyeCameras ||
 		//         _leftEyeCamera.enabled == !usePerEyeCameras ||
 		//         _rightEyeCamera.enabled == !(usePerEyeCameras && (!monoscopic || OVRPlugin.EyeTextureArrayEnabled)))
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_95 = __this->____centerEyeCamera_28;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_95 = __this->____centerEyeCamera_29;
 		NullCheck(L_95);
 		bool L_96;
 		L_96 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(L_95, NULL);
-		bool L_97 = __this->___usePerEyeCameras_15;
+		bool L_97 = __this->___usePerEyeCameras_16;
 		if ((((int32_t)L_96) == ((int32_t)L_97)))
 		{
 			goto IL_0359;
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_98 = __this->____leftEyeCamera_29;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_98 = __this->____leftEyeCamera_30;
 		NullCheck(L_98);
 		bool L_99;
 		L_99 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(L_98, NULL);
-		bool L_100 = __this->___usePerEyeCameras_15;
+		bool L_100 = __this->___usePerEyeCameras_16;
 		if ((((int32_t)L_99) == ((int32_t)((((int32_t)L_100) == ((int32_t)0))? 1 : 0))))
 		{
 			goto IL_0359;
 		}
 	}
 	{
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_101 = __this->____rightEyeCamera_30;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_101 = __this->____rightEyeCamera_31;
 		NullCheck(L_101);
 		bool L_102;
 		L_102 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(L_101, NULL);
-		bool L_103 = __this->___usePerEyeCameras_15;
+		bool L_103 = __this->___usePerEyeCameras_16;
 		G_B42_0 = L_102;
 		if (!L_103)
 		{
@@ -13526,24 +13528,24 @@ IL_0357:
 IL_0359:
 	{
 		// _skipUpdate = true;
-		__this->____skipUpdate_18 = (bool)1;
+		__this->____skipUpdate_19 = (bool)1;
 	}
 
 IL_0360:
 	{
 		// _centerEyeCamera.enabled = !usePerEyeCameras;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_106 = __this->____centerEyeCamera_28;
-		bool L_107 = __this->___usePerEyeCameras_15;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_106 = __this->____centerEyeCamera_29;
+		bool L_107 = __this->___usePerEyeCameras_16;
 		NullCheck(L_106);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_106, (bool)((((int32_t)L_107) == ((int32_t)0))? 1 : 0), NULL);
 		// _leftEyeCamera.enabled = usePerEyeCameras;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_108 = __this->____leftEyeCamera_29;
-		bool L_109 = __this->___usePerEyeCameras_15;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_108 = __this->____leftEyeCamera_30;
+		bool L_109 = __this->___usePerEyeCameras_16;
 		NullCheck(L_108);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_108, L_109, NULL);
 		// _rightEyeCamera.enabled = (usePerEyeCameras && (!monoscopic || OVRPlugin.EyeTextureArrayEnabled));
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_110 = __this->____rightEyeCamera_30;
-		bool L_111 = __this->___usePerEyeCameras_15;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_110 = __this->____rightEyeCamera_31;
+		bool L_111 = __this->___usePerEyeCameras_16;
 		G_B49_0 = L_110;
 		if (!L_111)
 		{
@@ -13859,8 +13861,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig_CheckForAnchorsInParent_m94
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m4929475EEB07641CBAC09FD5E17B3187FC858211_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_mA6CFCFDF515F1A74CF2DB450EE98B86E7D095DF0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m8D166460D48B4A75D56F6B43244F6E42637E8A65_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_m488F5C9976F2EC39EA527F68A1FDB65501671E03_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -13880,10 +13882,10 @@ IL_000e:
 	{
 		// Check<OVRSpatialAnchor>(parent);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = V_0;
-		OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_mA6CFCFDF515F1A74CF2DB450EE98B86E7D095DF0(__this, L_2, OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_mA6CFCFDF515F1A74CF2DB450EE98B86E7D095DF0_RuntimeMethod_var);
+		OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_m488F5C9976F2EC39EA527F68A1FDB65501671E03(__this, L_2, OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_m488F5C9976F2EC39EA527F68A1FDB65501671E03_RuntimeMethod_var);
 		// Check<OVRSceneAnchor>(parent);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = V_0;
-		OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m4929475EEB07641CBAC09FD5E17B3187FC858211(__this, L_3, OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C75_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m4929475EEB07641CBAC09FD5E17B3187FC858211_RuntimeMethod_var);
+		OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m8D166460D48B4A75D56F6B43244F6E42637E8A65(__this, L_3, OVRCameraRig_U3CCheckForAnchorsInParentU3Eg__CheckU7C76_0_TisOVRSceneAnchor_tAF36EEA6E22DCD47BA537E85CAC57424A1B51F69_m8D166460D48B4A75D56F6B43244F6E42637E8A65_RuntimeMethod_var);
 		// parent = parent.parent;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = V_0;
 		NullCheck(L_4);
@@ -13928,32 +13930,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCameraRig__ctor_m4ACFDD4B846326F35602
 	}
 	{
 		// protected readonly string trackingSpaceName = "TrackingSpace";
-		__this->___trackingSpaceName_19 = _stringLiteral4960166313998CAEAAA9147F237C2871203D823A;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackingSpaceName_19), (void*)_stringLiteral4960166313998CAEAAA9147F237C2871203D823A);
+		__this->___trackingSpaceName_20 = _stringLiteral4960166313998CAEAAA9147F237C2871203D823A;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackingSpaceName_20), (void*)_stringLiteral4960166313998CAEAAA9147F237C2871203D823A);
 		// protected readonly string trackerAnchorName = "TrackerAnchor";
-		__this->___trackerAnchorName_20 = _stringLiteral9AAB0165845C213E849DD2879C1A6EEF4A3F3350;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackerAnchorName_20), (void*)_stringLiteral9AAB0165845C213E849DD2879C1A6EEF4A3F3350);
+		__this->___trackerAnchorName_21 = _stringLiteral9AAB0165845C213E849DD2879C1A6EEF4A3F3350;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackerAnchorName_21), (void*)_stringLiteral9AAB0165845C213E849DD2879C1A6EEF4A3F3350);
 		// protected readonly string leftEyeAnchorName = "LeftEyeAnchor";
-		__this->___leftEyeAnchorName_21 = _stringLiteral0122954DBADC77CB8B663DFD25965A494E198D3A;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftEyeAnchorName_21), (void*)_stringLiteral0122954DBADC77CB8B663DFD25965A494E198D3A);
+		__this->___leftEyeAnchorName_22 = _stringLiteral0122954DBADC77CB8B663DFD25965A494E198D3A;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftEyeAnchorName_22), (void*)_stringLiteral0122954DBADC77CB8B663DFD25965A494E198D3A);
 		// protected readonly string centerEyeAnchorName = "CenterEyeAnchor";
-		__this->___centerEyeAnchorName_22 = _stringLiteral5E59A9F9DA37A05B58E7A1FCC2DE7D33725F73CA;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___centerEyeAnchorName_22), (void*)_stringLiteral5E59A9F9DA37A05B58E7A1FCC2DE7D33725F73CA);
+		__this->___centerEyeAnchorName_23 = _stringLiteral5E59A9F9DA37A05B58E7A1FCC2DE7D33725F73CA;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___centerEyeAnchorName_23), (void*)_stringLiteral5E59A9F9DA37A05B58E7A1FCC2DE7D33725F73CA);
 		// protected readonly string rightEyeAnchorName = "RightEyeAnchor";
-		__this->___rightEyeAnchorName_23 = _stringLiteral73BDE73ADD628E26797A2EB344184BDD634C3485;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightEyeAnchorName_23), (void*)_stringLiteral73BDE73ADD628E26797A2EB344184BDD634C3485);
+		__this->___rightEyeAnchorName_24 = _stringLiteral73BDE73ADD628E26797A2EB344184BDD634C3485;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightEyeAnchorName_24), (void*)_stringLiteral73BDE73ADD628E26797A2EB344184BDD634C3485);
 		// protected readonly string leftHandAnchorName = "LeftHandAnchor";
-		__this->___leftHandAnchorName_24 = _stringLiteral2FC902C5F9F921BA787586F206D3D1FED956D67C;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftHandAnchorName_24), (void*)_stringLiteral2FC902C5F9F921BA787586F206D3D1FED956D67C);
+		__this->___leftHandAnchorName_25 = _stringLiteral2FC902C5F9F921BA787586F206D3D1FED956D67C;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftHandAnchorName_25), (void*)_stringLiteral2FC902C5F9F921BA787586F206D3D1FED956D67C);
 		// protected readonly string rightHandAnchorName = "RightHandAnchor";
-		__this->___rightHandAnchorName_25 = _stringLiteral6721A66AD7E00E8593AC2ED5834B6B5BC8BC37E5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightHandAnchorName_25), (void*)_stringLiteral6721A66AD7E00E8593AC2ED5834B6B5BC8BC37E5);
+		__this->___rightHandAnchorName_26 = _stringLiteral6721A66AD7E00E8593AC2ED5834B6B5BC8BC37E5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightHandAnchorName_26), (void*)_stringLiteral6721A66AD7E00E8593AC2ED5834B6B5BC8BC37E5);
 		// protected readonly string leftControllerAnchorName = "LeftControllerAnchor";
-		__this->___leftControllerAnchorName_26 = _stringLiteral044DB7C788452EDFC1AEA0810FAE29646106DB06;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftControllerAnchorName_26), (void*)_stringLiteral044DB7C788452EDFC1AEA0810FAE29646106DB06);
+		__this->___leftControllerAnchorName_27 = _stringLiteral044DB7C788452EDFC1AEA0810FAE29646106DB06;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftControllerAnchorName_27), (void*)_stringLiteral044DB7C788452EDFC1AEA0810FAE29646106DB06);
 		// protected readonly string rightControllerAnchorName = "RightControllerAnchor";
-		__this->___rightControllerAnchorName_27 = _stringLiteral8B2BA149AD620F72CDF40EE270812BA52F59A2BB;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightControllerAnchorName_27), (void*)_stringLiteral8B2BA149AD620F72CDF40EE270812BA52F59A2BB);
+		__this->___rightControllerAnchorName_28 = _stringLiteral8B2BA149AD620F72CDF40EE270812BA52F59A2BB;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightControllerAnchorName_28), (void*)_stringLiteral8B2BA149AD620F72CDF40EE270812BA52F59A2BB);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -27852,7 +27854,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform trackingSpace { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_5;
 		return L_0;
 	}
 }
@@ -27965,7 +27967,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform centerEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CcenterEyeAnchorU3Ek__BackingField_6;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CcenterEyeAnchorU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -28170,7 +28172,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform leftEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftEyeAnchorU3Ek__BackingField_5;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftEyeAnchorU3Ek__BackingField_6;
 		return L_0;
 	}
 }
@@ -28178,7 +28180,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform rightEyeAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightEyeAnchorU3Ek__BackingField_7;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightEyeAnchorU3Ek__BackingField_8;
 		return L_0;
 	}
 }
@@ -28216,7 +28218,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform trackerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackerAnchorU3Ek__BackingField_12;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackerAnchorU3Ek__BackingField_13;
 		return L_0;
 	}
 }
@@ -28265,7 +28267,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform leftHandAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftHandAnchorU3Ek__BackingField_8;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftHandAnchorU3Ek__BackingField_9;
 		return L_0;
 	}
 }
@@ -28273,7 +28275,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform rightHandAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightHandAnchorU3Ek__BackingField_9;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightHandAnchorU3Ek__BackingField_10;
 		return L_0;
 	}
 }
@@ -28281,7 +28283,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform leftControllerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftControllerAnchorU3Ek__BackingField_10;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CleftControllerAnchorU3Ek__BackingField_11;
 		return L_0;
 	}
 }
@@ -28289,7 +28291,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform rightControllerAnchor { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightControllerAnchorU3Ek__BackingField_11;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CrightControllerAnchorU3Ek__BackingField_12;
 		return L_0;
 	}
 }
@@ -28454,8 +28456,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_trackingSpa
 	{
 		// public Transform trackingSpace { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CtrackingSpaceU3Ek__BackingField_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingSpaceU3Ek__BackingField_4), (void*)L_0);
+		__this->___U3CtrackingSpaceU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingSpaceU3Ek__BackingField_5), (void*)L_0);
 		return;
 	}
 }
@@ -28464,8 +28466,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftEyeAnch
 	{
 		// public Transform leftEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftEyeAnchorU3Ek__BackingField_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAnchorU3Ek__BackingField_5), (void*)L_0);
+		__this->___U3CleftEyeAnchorU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAnchorU3Ek__BackingField_6), (void*)L_0);
 		return;
 	}
 }
@@ -28474,8 +28476,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_centerEyeAn
 	{
 		// public Transform centerEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CcenterEyeAnchorU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAnchorU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CcenterEyeAnchorU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAnchorU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }
@@ -28484,8 +28486,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightEyeAnc
 	{
 		// public Transform rightEyeAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightEyeAnchorU3Ek__BackingField_7 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAnchorU3Ek__BackingField_7), (void*)L_0);
+		__this->___U3CrightEyeAnchorU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAnchorU3Ek__BackingField_8), (void*)L_0);
 		return;
 	}
 }
@@ -28494,8 +28496,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftHandAnc
 	{
 		// public Transform leftHandAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftHandAnchorU3Ek__BackingField_8 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftHandAnchorU3Ek__BackingField_8), (void*)L_0);
+		__this->___U3CleftHandAnchorU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftHandAnchorU3Ek__BackingField_9), (void*)L_0);
 		return;
 	}
 }
@@ -28504,8 +28506,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightHandAn
 	{
 		// public Transform rightHandAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightHandAnchorU3Ek__BackingField_9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightHandAnchorU3Ek__BackingField_9), (void*)L_0);
+		__this->___U3CrightHandAnchorU3Ek__BackingField_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightHandAnchorU3Ek__BackingField_10), (void*)L_0);
 		return;
 	}
 }
@@ -28514,8 +28516,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_trackerAnch
 	{
 		// public Transform trackerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CtrackerAnchorU3Ek__BackingField_12 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackerAnchorU3Ek__BackingField_12), (void*)L_0);
+		__this->___U3CtrackerAnchorU3Ek__BackingField_13 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackerAnchorU3Ek__BackingField_13), (void*)L_0);
 		return;
 	}
 }
@@ -28524,8 +28526,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_leftControl
 	{
 		// public Transform leftControllerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CleftControllerAnchorU3Ek__BackingField_10 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftControllerAnchorU3Ek__BackingField_10), (void*)L_0);
+		__this->___U3CleftControllerAnchorU3Ek__BackingField_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftControllerAnchorU3Ek__BackingField_11), (void*)L_0);
 		return;
 	}
 }
@@ -28534,8 +28536,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRCameraRig_set_rightContro
 	{
 		// public Transform rightControllerAnchor { get; private set; }
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
-		__this->___U3CrightControllerAnchorU3Ek__BackingField_11 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightControllerAnchorU3Ek__BackingField_11), (void*)L_0);
+		__this->___U3CrightControllerAnchorU3Ek__BackingField_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightControllerAnchorU3Ek__BackingField_12), (void*)L_0);
 		return;
 	}
 }

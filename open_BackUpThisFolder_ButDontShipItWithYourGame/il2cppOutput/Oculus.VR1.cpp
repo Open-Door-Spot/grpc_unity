@@ -3296,62 +3296,64 @@ struct OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B  : public RuntimeObje
 // OVRCameraRig
 struct OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// System.Boolean OVRCameraRig::disableTracking
+	bool ___disableTracking_4;
 	// UnityEngine.Transform OVRCameraRig::<trackingSpace>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackingSpaceU3Ek__BackingField_4;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackingSpaceU3Ek__BackingField_5;
 	// UnityEngine.Transform OVRCameraRig::<leftEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftEyeAnchorU3Ek__BackingField_5;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftEyeAnchorU3Ek__BackingField_6;
 	// UnityEngine.Transform OVRCameraRig::<centerEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CcenterEyeAnchorU3Ek__BackingField_6;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CcenterEyeAnchorU3Ek__BackingField_7;
 	// UnityEngine.Transform OVRCameraRig::<rightEyeAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightEyeAnchorU3Ek__BackingField_7;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightEyeAnchorU3Ek__BackingField_8;
 	// UnityEngine.Transform OVRCameraRig::<leftHandAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftHandAnchorU3Ek__BackingField_8;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftHandAnchorU3Ek__BackingField_9;
 	// UnityEngine.Transform OVRCameraRig::<rightHandAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightHandAnchorU3Ek__BackingField_9;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightHandAnchorU3Ek__BackingField_10;
 	// UnityEngine.Transform OVRCameraRig::<leftControllerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftControllerAnchorU3Ek__BackingField_10;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftControllerAnchorU3Ek__BackingField_11;
 	// UnityEngine.Transform OVRCameraRig::<rightControllerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightControllerAnchorU3Ek__BackingField_11;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightControllerAnchorU3Ek__BackingField_12;
 	// UnityEngine.Transform OVRCameraRig::<trackerAnchor>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackerAnchorU3Ek__BackingField_12;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtrackerAnchorU3Ek__BackingField_13;
 	// System.Action`1<OVRCameraRig> OVRCameraRig::UpdatedAnchors
-	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* ___UpdatedAnchors_13;
+	Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F* ___UpdatedAnchors_14;
 	// System.Action`1<UnityEngine.Transform> OVRCameraRig::TrackingSpaceChanged
-	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* ___TrackingSpaceChanged_14;
+	Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D* ___TrackingSpaceChanged_15;
 	// System.Boolean OVRCameraRig::usePerEyeCameras
-	bool ___usePerEyeCameras_15;
+	bool ___usePerEyeCameras_16;
 	// System.Boolean OVRCameraRig::useFixedUpdateForTracking
-	bool ___useFixedUpdateForTracking_16;
+	bool ___useFixedUpdateForTracking_17;
 	// System.Boolean OVRCameraRig::disableEyeAnchorCameras
-	bool ___disableEyeAnchorCameras_17;
+	bool ___disableEyeAnchorCameras_18;
 	// System.Boolean OVRCameraRig::_skipUpdate
-	bool ____skipUpdate_18;
+	bool ____skipUpdate_19;
 	// System.String OVRCameraRig::trackingSpaceName
-	String_t* ___trackingSpaceName_19;
+	String_t* ___trackingSpaceName_20;
 	// System.String OVRCameraRig::trackerAnchorName
-	String_t* ___trackerAnchorName_20;
+	String_t* ___trackerAnchorName_21;
 	// System.String OVRCameraRig::leftEyeAnchorName
-	String_t* ___leftEyeAnchorName_21;
+	String_t* ___leftEyeAnchorName_22;
 	// System.String OVRCameraRig::centerEyeAnchorName
-	String_t* ___centerEyeAnchorName_22;
+	String_t* ___centerEyeAnchorName_23;
 	// System.String OVRCameraRig::rightEyeAnchorName
-	String_t* ___rightEyeAnchorName_23;
+	String_t* ___rightEyeAnchorName_24;
 	// System.String OVRCameraRig::leftHandAnchorName
-	String_t* ___leftHandAnchorName_24;
+	String_t* ___leftHandAnchorName_25;
 	// System.String OVRCameraRig::rightHandAnchorName
-	String_t* ___rightHandAnchorName_25;
+	String_t* ___rightHandAnchorName_26;
 	// System.String OVRCameraRig::leftControllerAnchorName
-	String_t* ___leftControllerAnchorName_26;
+	String_t* ___leftControllerAnchorName_27;
 	// System.String OVRCameraRig::rightControllerAnchorName
-	String_t* ___rightControllerAnchorName_27;
+	String_t* ___rightControllerAnchorName_28;
 	// UnityEngine.Camera OVRCameraRig::_centerEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____centerEyeCamera_28;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____centerEyeCamera_29;
 	// UnityEngine.Camera OVRCameraRig::_leftEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____leftEyeCamera_29;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____leftEyeCamera_30;
 	// UnityEngine.Camera OVRCameraRig::_rightEyeCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____rightEyeCamera_30;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____rightEyeCamera_31;
 	// UnityEngine.Matrix4x4 OVRCameraRig::_previousTrackingSpaceTransform
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____previousTrackingSpaceTransform_31;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____previousTrackingSpaceTransform_32;
 };
 
 // OVRHeadsetEmulator
@@ -32663,7 +32665,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 {
 	{
 		// public Transform trackingSpace { get; private set; }
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___U3CtrackingSpaceU3Ek__BackingField_5;
 		return L_0;
 	}
 }

@@ -19,16 +19,29 @@ public class CustomLaserPointer : MonoBehaviour
     // Update is called once per frame
     void Update(){}
 
-    public bool LaserHit(){
+    public bool LaserHitPlane(){
         if(Physics.Raycast(handTransform.transform.position, handTransform.forward, out hit))
         {
-            if(hit.collider.gameObject.tag == "Plane"){
+            if(hit.collider.gameObject.tag == "Plane")
+            {
                 return true;
             }
         }
         return false;
-
     }
+
+    public bool LaserHitCapsule()
+    {
+        if (Physics.Raycast(handTransform.transform.position, handTransform.forward, out hit))
+        {
+            if (hit.collider.gameObject.tag == "Capsule")
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     public RaycastHit getHit()
     {
